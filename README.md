@@ -44,6 +44,16 @@ IMAGE_NAME="myapp" # TODO :version-tag
         - `docker rm myapp`
         - `docker rm myapp-worker`
 
+# Examples
+## Containers running locally
+![Containers running](assets/snap-containers-running.png?raw=true "Containers running")
+
+## Web app
+![Example web app](assets/snap-webapp.png?raw=true "Example web app")
+
+## Sidekiq dashboard
+![Example sidekiq dashboard](assets/snap-sidekiq-dashboard.png?raw=true "Example sidekiq dashboard")
+
 # Deploy to cloud
 TODO
 - `/cloud-config` folder with Terraform infra setup
