@@ -11,7 +11,17 @@ provider "google" {
 }
 
 # TODO: https://registry.terraform.io/modules/terraform-google-modules/project-factory/google/latest
+# - https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project_service
 # - create service project, link to shared vpc host project, enable APIs
+
+# TODO: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_service_account_iam
+# - create service accounts and bind iam policies
+
+# - service apis
+# - network
+# - database
+# - cache
+# - apps
 
 # create secrets (without versions for security purpose)
 module "secrets" {
