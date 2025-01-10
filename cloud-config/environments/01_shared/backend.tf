@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "my-project-tfstate"
+    bucket = "mike-heroku-rails-test-tfstate"
     prefix = "env/shared"
   }
 }

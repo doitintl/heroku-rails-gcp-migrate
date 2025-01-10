@@ -8,12 +8,12 @@ variable "registry_project_id" {
 
 variable "region" {
   type = string
+  default = "us-central1"
 }
 
 variable "zone" {
   type = string
+  default = "us-central1-a"
 }
 
-variable "secret_ids" {
-  type = set(string)
-}
+

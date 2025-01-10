@@ -4,6 +4,7 @@ variable "project_id" {
 
 variable "region" {
   type = string
+  default = "us-central1"
 }
 
 variable "repository_id" {

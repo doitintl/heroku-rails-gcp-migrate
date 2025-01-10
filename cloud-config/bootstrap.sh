@@ -4,6 +4,7 @@ export PROJECT_ID=$(gcloud config get-value project) # my-project [CHANGEME]
 export PROJECT_USER=$(gcloud config get-value core/account) # set current user
 export PROJECT_NUMBER=$(gcloud projects describe $PROJECT_ID --format="value(projectNumber)")
 
+gcloud services enable storage.googleapis.com
 
 ############################################################
 # initialize project for Terraform
