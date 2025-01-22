@@ -1,6 +1,6 @@
 locals {
   env                    = "dev"
-  network_name           = "my-app-network-${local.env}"
+  network_name           = "example-${local.env}"
   subnet_name            = "my-app-subnet"
   # subnet_names           = [for subnet_self_link in module.gcp_network.subnets_self_links : split("/", subnet_self_link)[length(split("/", subnet_self_link)) - 1]]
   service_apis           = toset(["compute.googleapis.com",
