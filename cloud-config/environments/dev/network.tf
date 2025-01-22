@@ -8,8 +8,13 @@ module "gcp_network" {
 
   subnets = [
     {
-      subnet_name   = local.subnet_name
-      subnet_ip     = "10.0.0.0/17"
+      subnet_name   = "bastion"
+      subnet_ip     = "10.250.0.0/29"
+      subnet_region = var.region
+    },
+    {
+      subnet_name   = "serverless-connector"
+      subnet_ip     = "10.249.0.0/28"
       subnet_region = var.region
     },
   ]

@@ -2,7 +2,8 @@ locals {
   env = "shared"
   service_apis           = toset(["compute.googleapis.com",
                             "storage.googleapis.com",
-                            "artifactregistry.googleapis.com"])
+                            "artifactregistry.googleapis.com",
+                            "cloudbuild.googleapis.com"])
 }
 
 provider "google" {
