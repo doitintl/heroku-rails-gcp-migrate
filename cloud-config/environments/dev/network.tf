@@ -1,3 +1,5 @@
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network_peering
+
 
 module "gcp_network" {
   source  = "terraform-google-modules/network/google"
